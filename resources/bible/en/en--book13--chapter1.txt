@@ -1,0 +1,133 @@
+<p><span class="bible_book">1 Chronicles 1</span>
+<a href = "#chapter/book13--chapter2.txt"><span class="icon icon-forward"></span></a></p>
+<div class = "bible">
+<sup class="versenum">1</sup> Adam, Seth, Enosh,
+<br>
+<sup class="versenum">2</sup> Kenan, Mahalalel, Jared, 
+<br>
+<sup class="versenum">3</sup> Idris (Enoch), Methuselah, Lamech, 
+<br>
+<sup class="versenum">4</sup> Noah, Shem, Ham, and Japheth.
+<br>
+<sup class="versenum">5</sup> The sons of Japheth: Gomer, and Magog, and Madai, and Javan, and Tubal, and Meshech, and Tiras.
+<br>
+<sup class="versenum">6</sup> And the sons of Gomer: Ashkenaz, and Diphath, and Togarmah.
+<br>
+<sup class="versenum">7</sup> And the sons of Javan: Elishah, and Tarshish, Kittim, and Rodanim.
+<br>
+<sup class="versenum">8</sup> The sons of Ham: Cush, and Mizraim, Put, and Canaan.
+<br>
+<sup class="versenum">9</sup> And the sons of Cush: Seba, and Havilah, and Sabta, and Raama, and Sabteca.And the sons of Raamah: Sheba, and Dedan.
+<br>
+<sup class="versenum">10</sup> And Cush begat Nimrod; he began to be a mighty one in the earth.
+<br>
+<sup class="versenum">11</sup> And Mizraim begat Ludim, and Anamim, and Lehabim, and Naphtuhim, 
+<br>
+<sup class="versenum">12</sup> and Pathrusim, and Casluhim (from whence came the Philistines), and Caphtorim.
+<br>
+<sup class="versenum">13</sup> And Canaan begat Sidon his first-born, and Heth, 
+<br>
+<sup class="versenum">14</sup> and the Jebusite, and the Amorite, and the Girgashite, 
+<br>
+<sup class="versenum">15</sup> and the Hivite, and the Arkite, and the Sinite, 
+<br>
+<sup class="versenum">16</sup> and the Arvadite, and the Zemarite, and the Hamathite.
+<br>
+<sup class="versenum">17</sup> The sons of Shem: Elam, and Asshur, and Arpachshad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech.
+<br>
+<sup class="versenum">18</sup> And Arpachshad begat Shelah, and Shelah begat Eber.
+<br>
+<sup class="versenum">19</sup> And unto Eber were born two sons: the name of the one was Peleg; for in his days the earth was divided; and his brother’s name was Joktan.
+<br>
+<sup class="versenum">20</sup> And Joktan begat Almodad, and Sheleph, and Hazarmaveth, and Jerah, 
+<br>
+<sup class="versenum">21</sup> and Hadoram, and Uzal, and Diklah, 
+<br>
+<sup class="versenum">22</sup> and Ebal, and Abimael, and Sheba, 
+<br>
+<sup class="versenum">23</sup> and Ophir, and Havilah, and Jobab.
+<br>
+ All these were the sons of Joktan.
+<br>
+<sup class="versenum">24</sup> Shem, Arpachshad, Shelah, 
+<br>
+<sup class="versenum">25</sup> Eber, Peleg, Reu, 
+<br>
+<sup class="versenum">26</sup> Serug, Nahor, Terah, 
+<br>
+<sup class="versenum">27</sup> Abram (the same is Ibrahim (Abraham)).
+<br>
+<sup class="versenum">28</sup> The sons of Ibrahim (Abraham): Ishaq (Isaac), and Ishmael.
+<br>
+<sup class="versenum">29</sup> These are their generations: the first-born of Ishmael, Nebaioth; then Kedar, and Adbeel, and Mibsam, 
+<br>
+<sup class="versenum">30</sup> Mishma, and Dumah, Massa, Hadad, and Tema, 
+<br>
+<sup class="versenum">31</sup> Jetur, Naphish, and Kedemah.
+<br>
+ These are the sons of Ishmael.
+<br>
+<sup class="versenum">32</sup> And the sons of Keturah, Ibrahim (Abraham)’s concubine: she bare Zimran, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah. And the sons of Jokshan: Sheba, and Dedan.
+<br>
+<sup class="versenum">33</sup> And the sons of Midian: Ephah, and Epher, and Hanoch, and Abida, and Eldaah.
+<br>
+ All these were the sons of Keturah.
+<br>
+<sup class="versenum">34</sup> And Ibrahim (Abraham) begat Ishaq (Isaac).
+<br>
+ The sons of Ishaq (Isaac): Esau, and Israel.
+<br>
+<sup class="versenum">35</sup> The sons of Esau: Eliphaz, Reuel, and Jeush, and Jalam, and Korah.
+<br>
+<sup class="versenum">36</sup> The sons of Eliphaz: Teman, and Omar, Zephi, and Gatam, Kenaz, and Timna, and Amalek.
+<br>
+<sup class="versenum">37</sup> The sons of Reuel: Nahath, Zerah, Shammah, and Mizzah.
+<br>
+<sup class="versenum">38</sup> And the sons of Seir: Lotan, and Shobal, and Zibeon, and Anah, and Dishon, and Ezer, and Dishan.
+<br>
+<sup class="versenum">39</sup> And the sons of Lotan: Hori, and Homam; and Timna was Lotan’s sister.
+<br>
+<sup class="versenum">40</sup> The sons of Shobal: Alian, and Manahath, and Ebal, Shephi, and Onam.
+<br>
+ And the sons of Zibeon: Aiah, and Anah.
+<br>
+<sup class="versenum">41</sup> The sons of Anah: Dishon.
+<br>
+ And the sons of Dishon: Hamran, and Eshban, and Ithran, and Cheran.
+<br>
+<sup class="versenum">42</sup> The sons of Ezer: Bilhan, and Zaavan, Jaakan.
+<br>
+ The sons of Dishan: Uz, and Aran.
+<br>
+<sup class="versenum">43</sup> Now these are the kings that reigned in the land of Edom, before there reigned any king over the children of Israel: Bela the son of Beor; and the name of his city was Dinhabah.
+<br>
+<sup class="versenum">44</sup> And Bela died, and Jobab the son of Zerah of Bozrah reigned in his stead.
+<br>
+<sup class="versenum">45</sup> And Jobab died, and Husham of the land of the Temanites reigned in his stead.
+<br>
+<sup class="versenum">46</sup> And Husham died, and Hadad the son of Bedad, who smote Midian in the field of Moab, reigned in his stead; and the name of his city was Avith.
+<br>
+<sup class="versenum">47</sup> And Hadad died, and Samlah of Masrekah reigned in his stead.
+<br>
+<sup class="versenum">48</sup> And Samlah died, and Shaul of Rehoboth by the River reigned in his stead.
+<br>
+<sup class="versenum">49</sup> And Shaul died, and Baal-hanan the son of Achbor reigned in his stead.
+<br>
+<sup class="versenum">50</sup> And Baal-hanan died, and Hadad reigned in his stead; and the name of his city was Pai: and his wife’s name was Mehetabel, the daughter of Matred, the daughter of Me-zahab.
+<br>
+<sup class="versenum">51</sup> And Hadad died.
+<br>
+And the chiefs of Edom were: chief Timna, chief Aliah, chief Jetheth, 
+<br>
+<sup class="versenum">52</sup> chief Oholibamah, chief Elah, chief Pinon, 
+<br>
+<sup class="versenum">53</sup> chief Kenaz, chief Teman, chief Mibzar, 
+<br>
+<sup class="versenum">54</sup> chief Magdiel, chief Iram.
+<br>
+ These are the chiefs of Edom.
+<br>
+<br>
+</div>
+<p><span class="bible_book">1 Chronicles 1</span>
+<a href = "#chapter/book13--chapter2.txt"><span class="icon icon-forward"></span></a></p>

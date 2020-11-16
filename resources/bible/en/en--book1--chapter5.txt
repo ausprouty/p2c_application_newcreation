@@ -1,0 +1,71 @@
+<p><a href = "#chapter/book1--chapter4.txt"><span class="icon icon-back"></span></a><span class="bible_book">Genesis 5</span>
+<a href = "#chapter/book1--chapter6.txt"><span class="icon icon-forward"></span></a></p>
+<div class = "bible">
+<sup class="versenum">1</sup> This is the book of the generations of Adam. In the day that Elokim created man, in the likeness of Elokim made he him;
+<br>
+<sup class="versenum">2</sup> male and female created he them, and blessed them, and called their name Adam, in the day when they were created.
+<br>
+<sup class="versenum">3</sup> And Adam lived a hundred and thirty years, and begat a son in his own likeness, after his image; and called his name Seth: 
+<br>
+<sup class="versenum">4</sup> and the days of Adam after he begat Seth were eight hundred years: and he begat sons and daughters.
+<br>
+<sup class="versenum">5</sup> And all the days that Adam lived were nine hundred and thirty years: and he died.
+<br>
+<sup class="versenum">6</sup> And Seth lived a hundred and five years, and begat Enosh: 
+<br>
+<sup class="versenum">7</sup> and Seth lived after he begat Enosh eight hundred and seven years, and begat sons and daughters: 
+<br>
+<sup class="versenum">8</sup> and all the days of Seth were nine hundred and twelve years: and he died.
+<br>
+<sup class="versenum">9</sup> And Enosh lived ninety years, and begat Kenan.
+<br>
+<sup class="versenum">10</sup> and Enosh lived after he begat Kenan eight hundred and fifteen years, and begat sons and daughters: 
+<br>
+<sup class="versenum">11</sup> and all the days of Enosh were nine hundred and five years: and he died.
+<br>
+<sup class="versenum">12</sup> And Kenan lived seventy years, and begat Mahalalel: 
+<br>
+<sup class="versenum">13</sup> and Kenan lived after he begat Mahalalel eight hundred and forty years, and begat sons and daughters: 
+<br>
+<sup class="versenum">14</sup> and all the days of Kenan were nine hundred and ten years: and he died.
+<br>
+<sup class="versenum">15</sup> And Mahalalel lived sixty and five years, and begat Jared: 
+<br>
+<sup class="versenum">16</sup> And Mahalalel lived after he begat Jared eight hundred and thirty years, and begat sons and daughters: 
+<br>
+<sup class="versenum">17</sup> and all the days of Mahalalel were eight hundred ninety and five years: and he died.
+<br>
+<sup class="versenum">18</sup> And Jared lived a hundred sixty and two years, and begat Idris (Enoch): 
+<br>
+<sup class="versenum">19</sup> and Jared lived after he begat Idris (Enoch) eight hundred years, and begat sons and daughters: 
+<br>
+<sup class="versenum">20</sup> And all the days of Jared were nine hundred sixty and two years: and he died.
+<br>
+<sup class="versenum">21</sup> And Idris (Enoch) lived sixty and five years, and begat Methuselah: 
+<br>
+<sup class="versenum">22</sup> and Idris (Enoch) walked with Elokim after he begat Methuselah three hundred years, and begat sons and daughters: 
+<br>
+<sup class="versenum">23</sup> and all the days of Idris (Enoch) were three hundred sixty and five years: 
+<br>
+<sup class="versenum">24</sup> and Idris (Enoch) walked with Elokim: and he was not; for Elokim took him.
+<br>
+<sup class="versenum">25</sup> And Methuselah lived a hundred eighty and seven years, and begat Lamech: 
+<br>
+<sup class="versenum">26</sup> and Methuselah lived after he begat Lamech seven hundred eighty and two years, and begat sons and daughters: 
+<br>
+<sup class="versenum">27</sup> And all the days of Methuselah were nine hundred sixty and nine years: and he died.
+<br>
+<sup class="versenum">28</sup> And Lamech lived a hundred eighty and two years, and begat a son: 
+<br>
+<sup class="versenum">29</sup> and he called his name Noah, saying, This same shall comfort us in our work and in the toil of our hands, which cometh because of the ground which تتراجراماتون hath cursed.
+<br>
+<sup class="versenum">30</sup> And Lamech lived after he begat Noah five hundred ninety and five years, and begat sons and daughters: 
+<br>
+<sup class="versenum">31</sup> And all the days of Lamech were seven hundred seventy and seven years: and he died.
+<br>
+<sup class="versenum">32</sup> And Noah was five hundred years old: And Noah begat Shem, Ham, and Japheth.
+<br>
+<br>
+</div>
+<p><a href = "#chapter/book1--chapter4.txt"><span class="icon icon-back"></span></a><span class="bible_book">Genesis 5</span>
+<a href = "#chapter/book1--chapter6.txt"><span class="icon icon-forward"></span></a></p>

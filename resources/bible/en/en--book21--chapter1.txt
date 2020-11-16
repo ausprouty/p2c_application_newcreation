@@ -1,0 +1,43 @@
+<p><span class="bible_book">Ecclesiastes 1</span>
+<a href = "#chapter/book21--chapter2.txt"><span class="icon icon-forward"></span></a></p>
+<div class = "bible">
+<sup class="versenum">1</sup> The words of the Preacher, the son of David (Dawad), king in Jerusalem.
+<br>
+<sup class="versenum">2</sup> Vanity of vanities, saith the Preacher; vanity of vanities, all is vanity.
+<br>
+<sup class="versenum">3</sup> What profit hath man of all his labor wherein he laboreth under the sun? 
+<br>
+<sup class="versenum">4</sup> One generation goeth, and another generation cometh; but the earth abideth for ever.
+<br>
+<sup class="versenum">5</sup> The sun also ariseth, and the sun goeth down, and hasteth to its place where it ariseth.
+<br>
+<sup class="versenum">6</sup> The wind goeth toward the south, and turneth about unto the north; it turneth about continually in its course, and the wind returneth again to its circuits.
+<br>
+<sup class="versenum">7</sup> All the rivers run into the sea, yet the sea is not full; unto the place whither the rivers go, thither they go again.
+<br>
+<sup class="versenum">8</sup> All things are full of weariness; man cannot utter it: the eye is not satisfied with seeing, nor the ear filled with hearing.
+<br>
+<sup class="versenum">9</sup> That which hath been is that which shall be; and that which hath been done is that which shall be done: and there is no new thing under the sun.
+<br>
+<sup class="versenum">10</sup> Is there a thing whereof it may be said, See, this is new? it hath been long ago, in the ages which were before us.
+<br>
+<sup class="versenum">11</sup> There is no remembrance of the former generations; neither shall there be any remembrance of the latter generations that are to come, among those that shall come after.
+<br>
+<sup class="versenum">12</sup> I the Preacher was king over Israel in Jerusalem.
+<br>
+<sup class="versenum">13</sup> And I applied my heart to seek and to search out by wisdom concerning all that is done under heaven: it is a sore travail that Elokim hath given to the sons of men to be exercised therewith.
+<br>
+<sup class="versenum">14</sup> I have seen all the works that are done under the sun; and, behold, all is vanity and a striving after wind.
+<br>
+<sup class="versenum">15</sup> That which is crooked cannot be made straight; and that which is wanting cannot be numbered.
+<br>
+<sup class="versenum">16</sup> I communed with mine own heart, saying, Lo, I have gotten me great wisdom above all that were before me in Jerusalem; yea, my heart hath had great experience of wisdom and knowledge.
+<br>
+<sup class="versenum">17</sup> And I applied my heart to know wisdom, and to know madness and folly: I perceived that this also was a striving after wind.
+<br>
+<sup class="versenum">18</sup> For in much wisdom is much grief; and he that increaseth knowledge increaseth sorrow.
+<br>
+<br>
+</div>
+<p><span class="bible_book">Ecclesiastes 1</span>
+<a href = "#chapter/book21--chapter2.txt"><span class="icon icon-forward"></span></a></p>
