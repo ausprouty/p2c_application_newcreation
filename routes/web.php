@@ -17,3 +17,16 @@ Route::get('/ebook', 'SiteController@ebook')->name('ebook');
 Route::get('/clear', 'SiteController@clear')->name('clear');
 Route::get('/debug', 'SiteController@debug')->name('debug');
 Route::get('bible/{book_name}', 'BibleController@download')->name('download');
+
+Route::get('welcome/{locale}', function ($locale) {
+    if (! in_array($locale, ['ar','en', 'fa', 'ur'])) {
+        abort(400);
+    }
+    App::setLocale($locale);
+});
+
+Route::get('set-locale/{locale}', function ($locale) {
+    App::setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
+})->middleware('check.locale')->name('locale.setting');

@@ -52,10 +52,23 @@
                 <img class="nav-front" src="{{ asset('files/images/NavFront.png')}}">
             </div>
             <div class = "nav-column-share">
+                <a onclick="languageMenu('homeDropdown')" class="dropbtn" href="javascript:void(0);">
+                    <img class="nav-share dropbtn" src="{{ asset('files/images/NavFrontLanguages.png')}}">
+                </a>
+                <div id="homeDropdown" class="dropdown-content">
+                    <a href="{{ route('locale.setting', 'ar') }}">(Arabic) عربى</a>
+                    <a href="{{ route('locale.setting', 'en') }}">English</a>
+                    <a href="{{ route('locale.setting', 'fa') }}">(Farsi) فارسی</a>
+                    <a href="{{ route('locale.setting', 'ur') }}">(Urdu) اردو</a>
+                </div>
+            </div>
+           
+            <div class = "nav-column-share">
                 <a onclick="share()" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavFrontShare.png')}}">
                 </a>
             </div>
+            
         </div>
     </header>
     <div class="content blue">
@@ -76,6 +89,12 @@
                     <img class="nav-share" src="{{ asset('files/images/NavPathShare.png')}}">
                 </a>
             </div>
+            <div class = "nav-column-share">
+                <a onclick="languageMenu()" href="javascript:void(0);">
+                    <img class="nav-share" src="{{ asset('files/images/NavPathLanguages.png')}}">
+                </a>
+            </div>
+           
         </div>
     </header>
     <div class="content">
@@ -99,6 +118,11 @@
                     <img class="nav-share" src="{{ asset('files/images/NavPrinciplesShare.png')}}">
                 </a>
             </div>
+            <div class = "nav-column-share">
+                <a onclick="languageMenu()" href="javascript:void(0);">
+                    <img class="nav-share" src="{{ asset('files/images/NavPrinciplesLanguages.png')}}">
+                </a>
+            </div>
         </div>
     </header>
     <div class="content">
@@ -114,9 +138,15 @@
                     <img class="nav-bible" src="{{ asset('files/images/NavBibleBack.png')}}">
                 </a>
             </div>
+           
             <div class = "nav-column-share">
                 <a onclick="share()" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
+                </a>
+            </div>
+            <div class = "nav-column-share">
+                <a onclick="languageMenu()" href="javascript:void(0);">
+                    <img class="nav-share" src="{{ asset('files/images/NavBibleLanguages.png')}}">
                 </a>
             </div>
         </div>
@@ -148,6 +178,12 @@
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
                 </a>
             </div>
+            <div class = "nav-column-share">
+                <a onclick="languageMenu()" href="javascript:void(0);">
+                    <img class="nav-share" src="{{ asset('files/images/NavBibleLanguages.png')}}">
+                </a>
+            </div>
+            
         </div>
     </header>
     <div class="content bible-chapter-list">
@@ -167,6 +203,11 @@
             <div class = "nav-column-share">
                 <a onclick="share()" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
+                </a>
+            </div>
+            <div class = "nav-column-share">
+                <a onclick="languageMenu()" href="javascript:void(0);">
+                    <img class="nav-share" src="{{ asset('files/images/NavBibleLanguages.png')}}">
                 </a>
             </div>
         </div>
@@ -193,6 +234,7 @@
 <script src="{{ asset('js/ChapterView.js')}}"></script>
 <script src="{{ asset('js/EbookView.js')}}"></script>
 <script src="{{ asset('js/HomeView.js')}}"></script>
+<script src="{{ asset('js/Language.js')}}"></script>
 <script src="{{ asset('js/PageView.js')}}"></script>
 <script src="{{ asset('js/Share.js')}}"></script>
 <script src="{{ asset('js/app.js')}}"></script>
