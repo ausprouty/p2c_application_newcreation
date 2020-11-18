@@ -56,10 +56,10 @@
                     <img class="nav-share dropbtn" src="{{ asset('files/images/NavFrontLanguages.png')}}">
                 </a>
                 <div id="homeDropdown" class="dropdown-content">
-                    <a href="{{ route('locale.setting', 'ar') }}">(Arabic) عربى</a>
-                    <a href="{{ route('locale.setting', 'en') }}">English</a>
-                    <a href="{{ route('locale.setting', 'fa') }}">(Farsi) فارسی</a>
-                    <a href="{{ route('locale.setting', 'ur') }}">(Urdu) اردو</a>
+                    <a href="#ar/index">(Arabic) عربى</a>
+                    <a href="#en/index">English</a>
+                    <a href="#fa/index">(Farsi) فارسی</a>
+                    <a href="#ur/index">(Urdu) اردو</a>
                 </div>
             </div>
            
@@ -85,13 +85,19 @@
                 </a>
             </div>
             <div class = "nav-column-share">
-                <a onclick="share()" href="javascript:void(0);">
-                    <img class="nav-share" src="{{ asset('files/images/NavPathShare.png')}}">
+                <a onclick="languageMenu('ebookTplDropdown')" class="dropbtn" href="javascript:void(0);">
+                    <img class="nav-share dropbtn" src="{{ asset('files/images/NavPathLanguages.png')}}">
+                    <div id="ebookTplDropdown" class="dropdown-content">
+                    <a href="#ar/index">EbookTpl(Arabic) عربى</a>
+                    <a href="#en/index">English</a>
+                    <a href="#fa/index">(Farsi) فارسی</a>
+                    <a href="#ur/index">(Urdu) اردو</a>
+                </div>
                 </a>
             </div>
             <div class = "nav-column-share">
-                <a onclick="languageMenu()" href="javascript:void(0);">
-                    <img class="nav-share" src="{{ asset('files/images/NavPathLanguages.png')}}">
+                <a onclick="share()" href="javascript:void(0);">
+                    <img class="nav-share" src="{{ asset('files/images/NavPathShare.png')}}">
                 </a>
             </div>
            
@@ -114,16 +120,22 @@
                 </a>
             </div>
             <div class = "nav-column-share">
+                <a onclick="languageMenu('pageTmpDropdown')" class="dropbtn" href="javascript:void(0);">
+                    <img class="nav-share dropbtn" src="{{ asset('files/images/NavPrinciplesLanguages.png')}}">
+                    <div id="pageTmpDropdown" class="dropdown-content">
+                        <a href="#ar/principles">(Arabic) عربى</a>
+                        <a href="#en/principles">English</a>
+                        <a href="#fa/principles">(Farsi) فارسی</a>
+                        <a href="#ur/principles">(Urdu) اردو</a>
+                    </div>
+                </a>
+            </div>
+            <div class = "nav-column-share">
                 <a onclick="share()" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavPrinciplesShare.png')}}">
                 </a>
             </div>
-            <div class = "nav-column-share">
-                <a onclick="languageMenu()" href="javascript:void(0);">
-                    <img class="nav-share" src="{{ asset('files/images/NavPrinciplesLanguages.png')}}">
-                </a>
-            </div>
-        </div>
+            
     </header>
     <div class="content">
         @{{{text}}}
@@ -138,26 +150,32 @@
                     <img class="nav-bible" src="{{ asset('files/images/NavBibleBack.png')}}">
                 </a>
             </div>
-           
+            <div class = "nav-column-share">
+                <a onclick="languageMenu('bookListTplDropdown')" class="dropbtn" href="javascript:void(0);">
+                    <img class="nav-share dropbtn" src="{{ asset('files/images/NavBibleLanguages.png')}}">
+                    <div id="bookListTplDropdown" class="dropdown-content">
+                        <a href="#ar/bible">(Arabic) عربى</a>
+                        <a href="#en/bible">English</a>
+                        <a href="#fa/bible">(Farsi) فارسی</a>
+                        <a href="#ur/bible">(Urdu) اردو</a>
+                    </div>
+                </a>
+            </div>
             <div class = "nav-column-share">
                 <a onclick="share()" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
                 </a>
             </div>
-            <div class = "nav-column-share">
-                <a onclick="languageMenu()" href="javascript:void(0);">
-                    <img class="nav-share" src="{{ asset('files/images/NavBibleLanguages.png')}}">
-                </a>
-            </div>
         </div>
     </header>
-    <div class="content">
-        <h2 class="brown select-book ml-10">Select Book</h2>
-        <ul class="table-view">
-            @{{#each this}}
-            <li class="table-view-cell bible-book">
-                <a class="table-link  bible-book" href="#book/@{{bid}}">
-                    @{{book_name}}
+    <div class="content" dir = "@{{dir}}">
+        <h2 class="brown select-book ml-10 @{{dir}}"> @{{title}}</h2>
+      @{{isox}}
+        <ul class="table-view @{{dir}}">
+            @{{#each books}}
+            <li class="table-view-cell bible-book @{{dir}}">
+                <a class="table-link  bible-book @{{dir}}" href="@{{link}}">
+                    @{{{book_name_selected}}}
                 </a>
             </li>
             @{{/each}}
@@ -174,20 +192,25 @@
                 </a>
             </div>
             <div class = "nav-column-share">
+                <a onclick="languageMenu('çhapterListTplDropdown')" class="dropbtn" href="javascript:void(0);">
+                    <img class="nav-share dropbtn" src="{{ asset('files/images/NavBibleLanguages.png')}}">
+                    <div id="çhapterListTplDropdown" class="dropdown-content">
+                        <a href="#ar/book/@{{bid}}">(Arabic) عربى</a>
+                        <a href="#en/book/@{{bid}}">English</a>
+                        <a href="#fa/book/@{{bid}}">(Farsi) فارسی</a>
+                        <a href="#ur/book/@{{bid}}">(Urdu) اردو</a>
+                    </div>
+                </a>
+            </div>
+            <div class = "nav-column-share">
                 <a onclick="share()" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
                 </a>
             </div>
-            <div class = "nav-column-share">
-                <a onclick="languageMenu()" href="javascript:void(0);">
-                    <img class="nav-share" src="{{ asset('files/images/NavBibleLanguages.png')}}">
-                </a>
-            </div>
-            
         </div>
     </header>
     <div class="content bible-chapter-list">
-        @{{{this}}}
+        @{{{table}}}
         <br>
     </div>
 </script>
@@ -201,15 +224,22 @@
                 </a>
             </div>
             <div class = "nav-column-share">
+                <a onclick="languageMenu('çhapterTplDropdown')"  class="dropbtn" href="javascript:void(0);">
+                    <img class="nav-share dropbtn" src="{{ asset('files/images/NavBibleLanguages.png')}}">
+                    <div id="çhapterTplDropdown" class="dropdown-content">
+                        <a href="#ar/index">(ChapterTplArabic) عربى</a>
+                        <a href="#en/index">English</a>
+                        <a href="#fa/index">(Farsi) فارسی</a>
+                        <a href="#ur/index">(Urdu) اردو</a>
+                    </div>
+                </a>
+            </div>
+            <div class = "nav-column-share">
                 <a onclick="share()" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
                 </a>
             </div>
-            <div class = "nav-column-share">
-                <a onclick="languageMenu()" href="javascript:void(0);">
-                    <img class="nav-share" src="{{ asset('files/images/NavBibleLanguages.png')}}">
-                </a>
-            </div>
+            
         </div>
     </header>
     <div class="content">

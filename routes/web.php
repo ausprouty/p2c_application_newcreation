@@ -29,4 +29,4 @@ Route::get('set-locale/{locale}', function ($locale) {
     App::setLocale($locale);
     session()->put('locale', $locale);
     return redirect()->back();
-})->middleware('check.locale')->name('locale.setting');
+})->middleware('locale')->name('locale.setting');

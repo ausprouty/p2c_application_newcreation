@@ -1,5 +1,7 @@
 <?php
 namespace App\Http\Middleware;
+
+use Illuminate\Foundation\Http\Middleware\SetLocale as Middleware;
 /* from 
 https://stackoverflow.com/questions/60487349/how-to-make-language-button-switch-on-laravel
 */
