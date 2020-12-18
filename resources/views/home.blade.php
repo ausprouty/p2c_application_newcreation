@@ -49,7 +49,7 @@
     <header class="bar bar-nav nav-front">
         <div class = "nav-row">
             <div class = "nav-column-main">
-                <img class="nav-front" src="{{ asset('files/images/NavFront.png')}}">
+                <img class="nav-front" src="files/images/NavFront.png">
             </div>
             <div class = "nav-column-share">
                 <a onclick="languageMenu('homeDropdown')" class="dropbtn" href="javascript:void(0);">
@@ -80,8 +80,8 @@
     <header class="bar bar-nav nav-path">
         <div class = "nav-row">
             <div class = "nav-column-main">
-                <a href="#">
-                    <img class="nav-path" src="{{ asset('files/images/NavPath.png')}}">
+                <a href="#@{{iso}}/index">
+                    <img class="nav-path" src="files/images/NavPath-@{{iso}}.png'">
                 </a>
             </div>
             <div class = "nav-column-share">
@@ -115,8 +115,8 @@
     <header class="bar bar-nav nav-back">
         <div class = "nav-row">
             <div class = "nav-column-main">
-                <a href="#">
-                    <img class="nav-back" src="{{ asset('files/images/NavPrinciples.png')}}">
+                <a href="#@{{iso}}/index">
+                    <img class="nav-back" src="files/images/NavPrinciples-@{{iso}}.png">
                 </a>
             </div>
             <div class = "nav-column-share">
@@ -146,8 +146,8 @@
     <header class="bar bar-nav nav-bible">
         <div class = "nav-row">
             <div class = "nav-column-main">
-                <a href="#">
-                    <img class="nav-bible" src="{{ asset('files/images/NavBibleBack.png')}}">
+                <a href="#@{{iso}}/index">
+                    <img class="nav-bible" src="files/images/NavBibleBack-@{{iso}}.png">
                 </a>
             </div>
             <div class = "nav-column-share">
@@ -169,8 +169,12 @@
         </div>
     </header>
     <div class="content" dir = "@{{dir}}">
+        <div class = "download-banner">
+            <button class = "download-banner" id= "download-bible" onclick="downloadBible('@{{iso}}' )"  > 
+                Download Bible for offline use
+            </button>
+        </div>
         <h2 class="brown select-book ml-10 @{{dir}}"> @{{title}}</h2>
-      @{{isox}}
         <ul class="table-view @{{dir}}">
             @{{#each books}}
             <li class="table-view-cell bible-book @{{dir}}">
@@ -187,8 +191,8 @@
     <header class="bar bar-nav nav-bible">
         <div class = "nav-row">
             <div class = "nav-column-main">
-                <a href="#bible">
-                    <img class="nav-bible" src="{{ asset('files/images/NavBibleBack.png')}}">
+                <a href="#@{{iso}}/bible">
+                    <img class="nav-bible" src="files/images/NavBibleBack-@{{iso}}.png">
                 </a>
             </div>
             <div class = "nav-column-share">
@@ -209,7 +213,13 @@
             </div>
         </div>
     </header>
+    
     <div class="content bible-chapter-list">
+        <div class = "download-banner green">
+            <button class = "download-banner" id= "download-book" onclick="downloadBook('@{{iso}} ', '@{{file_name}}','@{{chapters}}')"> 
+                Download @{{book_name}} for offline use
+            </button>
+        </div>
         @{{{table}}}
         <br>
     </div>
@@ -219,18 +229,18 @@
     <header class="bar bar-nav nav-bible">
         <div class = "nav-row">
             <div class = "nav-column-main">
-                <a href="#bible">
-                    <img class="nav-bible" src="{{ asset('files/images/NavBibleBack.png')}}">
+                <a href="#@{{iso}}/bible">
+                    <img class="nav-bible" src="files/images/NavBibleBack-@{{iso}}.png">
                 </a>
             </div>
             <div class = "nav-column-share">
                 <a onclick="languageMenu('çhapterTplDropdown')"  class="dropbtn" href="javascript:void(0);">
                     <img class="nav-share dropbtn" src="{{ asset('files/images/NavBibleLanguages.png')}}">
                     <div id="çhapterTplDropdown" class="dropdown-content">
-                        <a href="#ar/index">(ChapterTplArabic) عربى</a>
-                        <a href="#en/index">English</a>
-                        <a href="#fa/index">(Farsi) فارسی</a>
-                        <a href="#ur/index">(Urdu) اردو</a>
+                        <a href="#ar/chapter/ar--@{{page}}">(Arabic) عربى</a>
+                        <a href="#en/chapter/en--@{{page}}">English</a>
+                        <a href="#fa/chapter/fa--@{{page}}">(Farsi) فارسی</a>
+                        <a href="#ur/chapter/ur--@{{page}}">(Urdu) اردو</a>
                     </div>
                 </a>
             </div>
@@ -239,12 +249,11 @@
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
                 </a>
             </div>
-            
         </div>
     </header>
-    <div class="content">
+    <div class="content" dir = "@{{dir}}">
         <p class="chapter_spacer"></p>
-        @{{{this}}}
+        @{{{text}}}
         <br>
         <hr>
     </div>
@@ -259,6 +268,7 @@
 <script src="{{ asset('lib/handlebars.min-v4.5.3.js')}}"></script>
 <script src="{{ asset('js/services/BibleService.js?')}}"></script>
 <script src="{{ asset('js/services/PageService.js')}}"></script>
+<script src="{{ asset('js/services/DownloadService.js')}}"></script>
 <script src="{{ asset('js/BookListView.js')}}"></script>
 <script src="{{ asset('js/ChapterListView.js')}}"></script>
 <script src="{{ asset('js/ChapterView.js')}}"></script>
@@ -269,9 +279,5 @@
 <script src="{{ asset('js/Share.js')}}"></script>
 <script src="{{ asset('js/app.js')}}"></script>
 <script src="{{ asset('js/epub/2020/dist/epub.js')}}"></script>
-
-
-
-
 </body>
 </html>

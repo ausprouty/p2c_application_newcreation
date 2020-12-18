@@ -37,16 +37,16 @@
     <link href="{{ asset('./css/examples.css') }}" rel="stylesheet"/>
 
     <script src="{{ asset('lib/jszip.min.js')}}"></script>
-    <script src="js/epub/dist/epub.min.js"></script>
+    <script src="{{ asset('./js/epub/dist/epub.min.js')}}"></script>
     
-    <script src="{{ asset('js/Share.js')}}"></script>
+    <script src="{{ asset('./js/Share.js')}}"></script>
 
   </head>
   <body>
     <header class="bar bar-nav nav-path">
       <div class = "nav-row">
         <div class = "nav-column-main">
-            <a href="./#">
+            <a href="../#en/index">
                 <img class="nav-path" src="{{ asset('files/images/NavPath.png')}}">
             </a>
         </div>
@@ -67,19 +67,30 @@
         new URLSearchParams(document.location.search.substring(1));
       var url =
         params && params.get("url") && decodeURIComponent(params.get("url"));
+      console.log ( 'url is  ' + url);
       var currentSectionIndex =
         params && params.get("loc") ? params.get("loc") : lastTime;
+        console.log (currentSectionIndex);
+
+      var cfi =
+        params && params.get("cfi") ? params.get("cfi") : null;
+        console.log (cfi);
 
       // Load the opf
-      window.book = ePub(url || "files/epub3/NewCreation.epub");
+      window.book = ePub(url || "../files/epub3/NewCreation.epub");
       var rendition = book.renderTo("viewer", {
         manager: "continuous",
         flow: "paginated",
         width: "100%",
         height: "100%"
       });
-
-      var displayed = rendition.display(currentSectionIndex);
+      var displayed = null;
+      if (cfi !== null){
+        displayed = rendition.display(cfi);
+      }
+      else{
+        displayed = rendition.display(currentSectionIndex);
+      }
       localStorage.setItem('currentSectionIndex', currentSectionIndex);
 
       displayed.then(function(renderer) {
@@ -88,7 +99,8 @@
 
       // Navigation loaded
       book.loaded.navigation.then(function(toc) {
-        // console.log(toc);
+        console.log ('toc');
+        console.log(toc);
       });
 
       book.ready.then(() => {
@@ -179,9 +191,10 @@
       });
 
       book.loaded.navigation.then(function(toc) {
-        var $select = document.getElementById("toc"),
+        console.log ('started navigation');
+        var select = document.getElementById("toc"),
           docfrag = document.createDocumentFragment();
-
+  
         toc.forEach(function(chapter) {
           var option = document.createElement("option");
           option.textContent = chapter.label;
@@ -189,12 +202,13 @@
 
           docfrag.appendChild(option);
         });
+        console.log (docfrag + 'is docfrag');
 
-        $select.appendChild(docfrag);
+        select.appendChild(docfrag);
 
-        $select.onchange = function() {
-          var index = $select.selectedIndex,
-            url = $select.options[index].ref;
+        select.onchange = function() {
+          var index = select.selectedIndex,
+            url = select.options[index].ref;
           rendition.display(url);
           return false;
         };

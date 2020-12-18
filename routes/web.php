@@ -13,20 +13,10 @@
 
 
 Route::get('/', 'SiteController@home')->name('home');
-Route::get('/ebook', 'SiteController@ebook')->name('ebook');
+Route::get('{iso}/ebook', 'SiteController@ebook')->name('ebook');
+Route::get('test', 'SiteController@test')->name('test');
 Route::get('/clear', 'SiteController@clear')->name('clear');
 Route::get('/debug', 'SiteController@debug')->name('debug');
-Route::get('bible/{book_name}', 'BibleController@download')->name('download');
-
-Route::get('welcome/{locale}', function ($locale) {
-    if (! in_array($locale, ['ar','en', 'fa', 'ur'])) {
-        abort(400);
-    }
-    App::setLocale($locale);
-});
-
-Route::get('set-locale/{locale}', function ($locale) {
-    App::setLocale($locale);
-    session()->put('locale', $locale);
-    return redirect()->back();
-})->middleware('locale')->name('locale.setting');
+Route::get('bible/chapter/{chapter_name}', 'BibleController@downloadChapter')->name('downloadChapter');
+Route::get('bible/book/{book_name}', 'BibleController@downloadBook')->name('downloadBook');
+Route::get('bible/all/{bible_name}', 'BibleController@downloadBible')->name('downloadBible');

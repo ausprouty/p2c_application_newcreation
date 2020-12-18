@@ -3,11 +3,47 @@
 namespace App\Http\Controllers;
 
 class BibleController extends Controller
+
+
 {
-    public function download($book_name)
+    
+
+    public function downloadBible($bible_name){
+        $zip_file = resource_path('bible') . '/zip/bible-chapters/'. $bible_name;
+        echo ($zip_file);
+        if (file_exists($zip_file)){
+            return response()
+            ->download($zip_file);
+        } else {
+            abort(404);
+        }
+
+    }
+    public function downloadBook($book_name){
+        $zip_file = resource_path('bible') . '/zip/'. $book_name;
+        if (file_exists($zip_file)){
+            return response()
+            ->download($zip_file);
+        } else {
+            abort(404);
+        }
+    }
+    public function downloadChapter($chapter_name){
+        $dir = '/zip/' . substr($chapter_name,0,2) . '/';
+        $filename = substr($chapter_name, 0, -3) . 'zip';
+        $zip_file = resource_path('bible') . $dir . $filename;
+        echo $zip_file;
+        if (file_exists($zip_file)){
+            return response()
+            ->download($zip_file);
+        } else {
+            abort(404);
+        }
+    }
+    public function downloadX($book_name)
     {
-        $bible_path = resource_path('bible');
-        $file_prefix = $book_name . '--chapter';
+        $bible_path = resource_path('bible') . '/zip/';
+       // $file_prefix = $book_name . '--chapter';
         
         $chapter_file_array = [];
 

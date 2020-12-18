@@ -20,6 +20,10 @@ class SiteController extends Controller
     {
         return view('ebook');
     }
+    public function test()
+    {
+        return view('test');
+    }
     
     
 }
