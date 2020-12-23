@@ -40,14 +40,15 @@
     <script src="{{ asset('./js/epub/dist/epub.min.js')}}"></script>
     
     <script src="{{ asset('./js/Share.js')}}"></script>
+    <script src="{{ asset('./js/EbookView.js')}}"></script>
 
   </head>
   <body>
     <header class="bar bar-nav nav-path">
       <div class = "nav-row">
         <div class = "nav-column-main">
-            <a href="../#en/index">
-                <img class="nav-path" src="{{ asset('files/images/NavPath.png')}}">
+            <a href="../#{{ $iso }}/index">
+                <img class="nav-path" src="../files/images/NavPath-{{ $iso }}.png">
             </a>
         </div>
         <div class = "nav-column-share">
@@ -61,7 +62,8 @@
     <div id="prev" class="arrow">‹</div>
     <div id="next" class="arrow">›</div>
     <script>
-     var lastTime =  localStorage.getItem('currentSectionIndex', undefined);
+     var iso = "{{ $iso }}";
+     var lastTime = findLastPage(iso);
       var params =
         URLSearchParams &&
         new URLSearchParams(document.location.search.substring(1));
@@ -72,9 +74,6 @@
         params && params.get("loc") ? params.get("loc") : lastTime;
         console.log (currentSectionIndex);
 
-      var cfi =
-        params && params.get("cfi") ? params.get("cfi") : null;
-        console.log (cfi);
 
       // Load the opf
       window.book = ePub(url || "../files/epub3/NewCreation.epub");
@@ -82,21 +81,16 @@
         manager: "continuous",
         flow: "paginated",
         width: "100%",
-        height: "100%"
+        height: "100%",
+        direction:"rtl"
       });
-      var displayed = null;
-      if (cfi !== null){
-        displayed = rendition.display(cfi);
-      }
-      else{
-        displayed = rendition.display(currentSectionIndex);
-      }
-      localStorage.setItem('currentSectionIndex', currentSectionIndex);
-
+      
+      var  displayed = rendition.display(currentSectionIndex);
+      storeLastPage(iso, currentSectionIndex);
       displayed.then(function(renderer) {
         // -- do stuff
       });
-
+      
       // Navigation loaded
       book.loaded.navigation.then(function(toc) {
         console.log ('toc');
@@ -109,7 +103,7 @@
         next.addEventListener(
           "click",
           function(e) {
-            book.package.metadata.direction === "rtl"
+            book.package.metadata.language !=="en"
               ? rendition.prev()
               : rendition.next();
             e.preventDefault();
@@ -121,7 +115,7 @@
         prev.addEventListener(
           "click",
           function(e) {
-            book.package.metadata.direction === "rtl"
+            book.package.metadata.language !== "en"
               ? rendition.next()
               : rendition.prev();
             e.preventDefault();
@@ -132,14 +126,14 @@
         var keyListener = function(e) {
           // Left Key
           if ((e.keyCode || e.which) == 37) {
-            book.package.metadata.direction === "rtl"
+            book.package.metadata.direction !=="ltr"
               ? rendition.next()
               : rendition.prev();
           }
 
           // Right Key
           if ((e.keyCode || e.which) == 39) {
-            book.package.metadata.direction === "rtl"
+            book.package.metadata.direction !=="ltr"
               ? rendition.prev()
               : rendition.next();
           }
@@ -164,18 +158,19 @@
       });
 
       rendition.on("relocated", function(location) {
-        console.log('rendition.on');
+        //console.log('rendition.on');
         console.log(location);
-        console.log(location.start.href);
-        localStorage.setItem("currentSectionIndex",location.start.href);
+        //console.log(location.start.href);
+        console.log (book.package.metadata.direction)
+        storeLastPage(iso, location.start.href);
         var next =
-          book.package.metadata.direction === "rtl"
-            ? document.getElementById("prev")
-            : document.getElementById("next");
-        var prev =
-          book.package.metadata.direction === "rtl"
+           book.package.metadata.direction =="ltr"
             ? document.getElementById("next")
             : document.getElementById("prev");
+        var prev =
+        book.package.metadata.direction =="ltr"
+            ? document.getElementById("prev")
+            : document.getElementById("next");
 
         if (location.atEnd) {
           next.style.visibility = "hidden";
@@ -191,10 +186,10 @@
       });
 
       book.loaded.navigation.then(function(toc) {
-        console.log ('started navigation');
+       // console.log ('started navigation');
         var select = document.getElementById("toc"),
           docfrag = document.createDocumentFragment();
-  
+         // console.dir(select);
         toc.forEach(function(chapter) {
           var option = document.createElement("option");
           option.textContent = chapter.label;
@@ -202,8 +197,7 @@
 
           docfrag.appendChild(option);
         });
-        console.log (docfrag + 'is docfrag');
-
+        //console.dir(docfrag);
         select.appendChild(docfrag);
 
         select.onchange = function() {

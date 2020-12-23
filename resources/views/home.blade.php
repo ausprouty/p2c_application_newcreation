@@ -33,7 +33,6 @@
     <link href="{{ asset('./css/styles.css') }}" rel="stylesheet"/>
     <link href="{{ asset('./css/newcreation.css') }}" rel="stylesheet"/>
     <link href="{{ asset('./css/basic.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('./css/ebook.css') }}" rel="stylesheet"/>
 </head>
 <script type="text/javascript">
     window.onload = function () {
@@ -73,10 +72,12 @@
     </header>
     <div class="content blue">
         @{{{text}}}
+        <div class="footer">
+        </div>
     </div>
 </script>
 
-<script id="ebook-tpl" type="text/template">
+<!---<script id="ebook-tpl" type="text/template">
     <header class="bar bar-nav nav-path">
         <div class = "nav-row">
             <div class = "nav-column-main">
@@ -107,10 +108,11 @@
         <a id="prev" href="#prev" class="navlink">...</a>
         <div id="viewer" class="scrolled"></div>
         <a id="next" href="#next" class="navlink">...</a>
-        
+        <div class="footer">
+        </div>
     </div>
 </script>
-
+-->
 <script id="page-tpl" type="text/template">
     <header class="bar bar-nav nav-back">
         <div class = "nav-row">
@@ -139,7 +141,10 @@
     </header>
     <div class="content">
         @{{{text}}}
+        <div class="footer">
+        </div>
     </div>
+    
 </script>
 
 <script id="book-list-tpl" type="text/template">
@@ -170,7 +175,7 @@
     </header>
     <div class="content" dir = "@{{dir}}">
         <div class = "download-banner">
-            <button class = "download-banner" id= "download-bible" onclick="downloadBible('@{{iso}}' )"  > 
+            <button class = "download-banner @{{download}}"  id= "download-bible" onclick="downloadBible('@{{iso}}' )"  > 
                 Download Bible for offline use
             </button>
         </div>
@@ -184,6 +189,12 @@
             </li>
             @{{/each}}
         </ul>
+        <div id = "bible-downloaded" class="downloaded  @{{downloaded}}">
+            <p>Bible ready for offline use</p>
+            <p><a href= "#" onclick="removeStoredBible('@{{iso}}');return false;">Remove Bible from local storage</a></p>
+        </div>
+        <div class="footer">
+        </div>
     </div>
 </script>
 
@@ -215,13 +226,20 @@
     </header>
     
     <div class="content bible-chapter-list">
-        <div class = "download-banner green">
-            <button class = "download-banner" id= "download-book" onclick="downloadBook('@{{iso}} ', '@{{file_name}}','@{{chapters}}')"> 
+        <div id = "download_button" class = "download-banner green  @{{download}}">
+            <button class = "download-banner" 
+                id= "download-book" 
+                onclick="downloadBook('@{{iso}} ', '@{{file_name}}','@{{chapters}}')"> 
                 Download @{{book_name}} for offline use
             </button>
         </div>
         @{{{table}}}
-        <br>
+        <div id = "book-downloaded" class="downloaded  @{{downloaded}}">
+            <p>@{{book_name}} ready for offline use</p>
+            <p><a href= "#" onclick="removeStoredBook('@{{file_name}}');return false;">Remove @{{book_name}} from local storage</p>
+        </div>
+        <div class="footer">
+        </div>
     </div>
 </script>
 
@@ -256,6 +274,8 @@
         @{{{text}}}
         <br>
         <hr>
+        <div class="footer">
+        </div>
     </div>
 </script>
 

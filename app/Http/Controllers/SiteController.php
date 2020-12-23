@@ -16,9 +16,10 @@ class SiteController extends Controller
     {
         return view('debug');
     }
-    public function ebook()
+    public function ebook($iso)
     {
-        return view('ebook');
+        //todo: I need to modify view with new content.
+        return view('ebook', ['iso'=> $iso]);
     }
     public function test()
     {
