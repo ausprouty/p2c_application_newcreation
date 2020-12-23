@@ -63,7 +63,7 @@
             </div>
            
             <div class = "nav-column-share">
-                <a onclick="share()" href="javascript:void(0);">
+                <a onclick="share('@{{iso}}')" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavFrontShare.png')}}">
                 </a>
             </div>
@@ -77,42 +77,7 @@
     </div>
 </script>
 
-<!---<script id="ebook-tpl" type="text/template">
-    <header class="bar bar-nav nav-path">
-        <div class = "nav-row">
-            <div class = "nav-column-main">
-                <a href="#@{{iso}}/index">
-                    <img class="nav-path" src="files/images/NavPath-@{{iso}}.png'">
-                </a>
-            </div>
-            <div class = "nav-column-share">
-                <a onclick="languageMenu('ebookTplDropdown')" class="dropbtn" href="javascript:void(0);">
-                    <img class="nav-share dropbtn" src="{{ asset('files/images/NavPathLanguages.png')}}">
-                    <div id="ebookTplDropdown" class="dropdown-content">
-                    <a href="#ar/index">EbookTpl(Arabic) عربى</a>
-                    <a href="#en/index">English</a>
-                    <a href="#fa/index">(Farsi) فارسی</a>
-                    <a href="#ur/index">(Urdu) اردو</a>
-                </div>
-                </a>
-            </div>
-            <div class = "nav-column-share">
-                <a onclick="share()" href="javascript:void(0);">
-                    <img class="nav-share" src="{{ asset('files/images/NavPathShare.png')}}">
-                </a>
-            </div>
-           
-        </div>
-    </header>
-    <div class="content">
-        <a id="prev" href="#prev" class="navlink">...</a>
-        <div id="viewer" class="scrolled"></div>
-        <a id="next" href="#next" class="navlink">...</a>
-        <div class="footer">
-        </div>
-    </div>
-</script>
--->
+
 <script id="page-tpl" type="text/template">
     <header class="bar bar-nav nav-back">
         <div class = "nav-row">
@@ -133,7 +98,7 @@
                 </a>
             </div>
             <div class = "nav-column-share">
-                <a onclick="share()" href="javascript:void(0);">
+                <a onclick="share('@{{iso}}')" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavPrinciplesShare.png')}}">
                 </a>
             </div>
@@ -167,7 +132,7 @@
                 </a>
             </div>
             <div class = "nav-column-share">
-                <a onclick="share()" href="javascript:void(0);">
+                <a onclick="share('@{{iso}}')" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
                 </a>
             </div>
@@ -176,7 +141,7 @@
     <div class="content" dir = "@{{dir}}">
         <div class = "download-banner">
             <button class = "download-banner @{{download}}"  id= "download-bible" onclick="downloadBible('@{{iso}}' )"  > 
-                Download Bible for offline use
+                 @{{download_bible}}
             </button>
         </div>
         <h2 class="brown select-book ml-10 @{{dir}}"> @{{title}}</h2>
@@ -190,8 +155,8 @@
             @{{/each}}
         </ul>
         <div id = "bible-downloaded" class="downloaded  @{{downloaded}}">
-            <p>Bible ready for offline use</p>
-            <p><a href= "#" onclick="removeStoredBible('@{{iso}}');return false;">Remove Bible from local storage</a></p>
+            <p>'@{{bible_ready}}</p>
+            <p><a href= "#" onclick="removeStoredBible('@{{iso}}');return false;">@{{remove_bible}}</a></p>
         </div>
         <div class="footer">
         </div>
@@ -218,7 +183,7 @@
                 </a>
             </div>
             <div class = "nav-column-share">
-                <a onclick="share()" href="javascript:void(0);">
+                <a onclick="share('@{{iso}}')" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
                 </a>
             </div>
@@ -229,14 +194,14 @@
         <div id = "download_button" class = "download-banner green  @{{download}}">
             <button class = "download-banner" 
                 id= "download-book" 
-                onclick="downloadBook('@{{iso}} ', '@{{file_name}}','@{{chapters}}')"> 
-                Download @{{book_name}} for offline use
+                onclick="downloadBook('@{{iso}}', '@{{file_name}}','@{{chapters}}')"> 
+                 @{{download_book}}
             </button>
         </div>
         @{{{table}}}
         <div id = "book-downloaded" class="downloaded  @{{downloaded}}">
-            <p>@{{book_name}} ready for offline use</p>
-            <p><a href= "#" onclick="removeStoredBook('@{{file_name}}');return false;">Remove @{{book_name}} from local storage</p>
+            <p>@{{book_ready}}</p>
+            <p><a href= "#" onclick="removeStoredBook('@{{file_name}}');return false;">@{{remove_item}}</p>
         </div>
         <div class="footer">
         </div>
@@ -263,7 +228,7 @@
                 </a>
             </div>
             <div class = "nav-column-share">
-                <a onclick="share()" href="javascript:void(0);">
+                <a onclick="share('@{{iso}}')" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavBibleShare.png')}}">
                 </a>
             </div>
@@ -271,6 +236,7 @@
     </header>
     <div class="content" dir = "@{{dir}}">
         <p class="chapter_spacer"></p>
+        <div>
         @{{{text}}}
         <br>
         <hr>
