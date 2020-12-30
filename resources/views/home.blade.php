@@ -29,10 +29,10 @@
     <link rel="mask-icon"  color="#1b6e0d" href="{{asset('./icons/safari-pinned-tab.svg')}}">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
-    <link href="{{ asset('./ratchet/css/ratchet.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('./css/styles.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('./css/newcreation.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('./css/basic.css') }}" rel="stylesheet"/>
+    <link href="{{asset('./ratchet/css/ratchet.css') }}" rel="stylesheet"/>
+    <link href="{{asset('./css/styles.css') }}" rel="stylesheet"/>
+    <link href="{{asset('./css/newcreation.css') }}" rel="stylesheet"/>
+    <link href="{{asset('./css/basic.css') }}" rel="stylesheet"/>
 </head>
 <script type="text/javascript">
     window.onload = function () {
@@ -244,26 +244,25 @@
         </div>
     </div>
 </script>
-
-<script src="{{ asset('lib/jquery-3.4.1.min.js')}}"></script>
-<script src="{{ asset('lib/router.js')}}"></script>
-<script src="{{ asset('lib/jszip.min.js')}}"></script>
-<script src="{{ asset('lib/jszip-utils.min.js')}}"></script>
-<script src="{{ asset('lib/pageslider.js')}}"></script>
-<script src="{{ asset('lib/lz-string.min.js')}}"></script>
-<script src="{{ asset('lib/handlebars.min-v4.5.3.js')}}"></script>
-<script src="{{ asset('js/services/BibleService.js?')}}"></script>
-<script src="{{ asset('js/services/PageService.js')}}"></script>
-<script src="{{ asset('js/services/DownloadService.js')}}"></script>
-<script src="{{ asset('js/BookListView.js')}}"></script>
-<script src="{{ asset('js/ChapterListView.js')}}"></script>
-<script src="{{ asset('js/ChapterView.js')}}"></script>
-<script src="{{ asset('js/EbookView.js')}}"></script>
-<script src="{{ asset('js/HomeView.js')}}"></script>
-<script src="{{ asset('js/Language.js')}}"></script>
-<script src="{{ asset('js/PageView.js')}}"></script>
-<script src="{{ asset('js/Share.js')}}"></script>
-<script src="{{ asset('js/app.js')}}"></script>
-<script src="{{ asset('js/epub/2020/dist/epub.js')}}"></script>
+<script src="lib/jquery-3.4.1.min.js?v=2.18"></script>
+<script src="lib/router.js?v=2.18"></script>
+<script src="lib/jszip.min.js?v=2.18"></script>
+<script src="lib/jszip-utils.min.js?v=2.18"></script>
+<script src="lib/pageslider.js?v=2.18"></script>
+<script src="lib/lz-string.min.js?v=2.18"></script>
+<script src="lib/handlebars.min-v4.5.3.js?v=2.18"></script>
+<script src="js/services/BibleService.js?v=2.18"></script>
+<script src="js/services/PageService.js?v=2.18"></script>
+<script src="js/services/DownloadService.js?v=2.18"></script>
+<script src="js/BookListView.js?v=2.18"></script>
+<script src="js/ChapterListView.js?v=2.18"></script>
+<script src="js/ChapterView.js?v=2.18"></script>
+<script src="js/EbookView.js?v=2.18"></script>
+<script src="js/HomeView.js?v=2.18"></script>
+<script src="js/Language.js?v=2.18"></script>
+<script src="js/PageView.js?v=2.18"></script>
+<script src="js/Share.js?v=2.18"></script>
+<script src="js/app.js?v=2.18"></script>
+<script src="js/epub/2020/dist/epub.js?v=2.18"></script>
 </body>
 </html>

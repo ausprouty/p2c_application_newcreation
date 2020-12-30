@@ -36,19 +36,25 @@
 <br\>
 <p>JAVASCRIPT</p>
 <p><a href="js/app.js">App.js</a></p>
-<p><a href="js/services/BibleService.js">  Bible Service</a></p>
-<p><a href="js/BookListView.js">  BookListView</a></p>
-<p><a href="js/ChapterListView.js">  ChapterListView</a></p>
-<p><a href="js/ChapterView.js">  ChapterView</a></p>
-<p><a href="js/Debug.js">  Debug</a></p>
-<p><a href="js/EbookView.js">  EbookView</a></p>
-<p><a href="js/epub/2020/dist/epub.js">  epub</a></p>
-<p><a href="js/HomeView.js">  HomeView</a></p>
-<p><a href="js/PageView.js">  Page View</a></p>
-<p><a href="js/services/PageService.js">  Page Service</a></p>
+<p><a href="js/services/BibleService.js">Bible Service</a></p>
+<p><a href="js/BookListView.js">BookListView</a></p>
+<p><a href="js/ChapterListView.js">ChapterListView</a></p>
+<p><a href="js/ChapterView.js">ChapterView</a></p>
+<p><a href="js/Debug.js">Debug</a></p>
+<p><a href="js/services/DownloadService.js">Download Service</a></p>
+<p><a href="js/EbookView.js">EbookView</a></p>
+<p><a href="js/HomeView.js">HomeView</a></p>
+<p><a href="js/Language.js">Language</a></p>
+<p><a href="js/PageView.js">Page View</a></p>
+<p><a href="js/services/PageService.js">Page Service</a></p>
+<p><a href="js/Share.js">Share</a></p>
 <br\>
-<p>SERVICE WORKER></p>
-p><a href="../service-worker.js">  Service Worker</a></p>
+<p>SERVICE WORKER</p>
+<p><a href="../service-worker.js">  Service Worker</a></p>
+
+<p onclick="listCache();">Click to show CACHE STORAGE</p>
+<div id = "cache"></div>
+
 
 <script src="{{ asset('js/Debug.js')}}"></script>
 </body>

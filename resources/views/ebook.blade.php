@@ -63,6 +63,9 @@
     <div id="next" class="arrow">›</div>
     <script>
      var iso = "{{ $iso }}";
+     if (typeof iso == 'undefined'){
+       iso = 'en';
+     }
      var lastTime = findLastPage(iso);
       var params =
         URLSearchParams &&
@@ -76,7 +79,7 @@
 
 
       // Load the opf
-      window.book = ePub(url || "../files/epub3/NewCreation.epub");
+      window.book = ePub(url || "../files/en/epub3/NewCreation.epub");
       var rendition = book.renderTo("viewer", {
         manager: "continuous",
         flow: "paginated",

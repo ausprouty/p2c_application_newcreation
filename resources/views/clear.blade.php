@@ -13,12 +13,27 @@
 <script type="text/javascript">
     window.onload = function () {
         window.localStorage.clear();
+        window.caches.keys().then(function (cacheNames) {
+          cacheNames.forEach(function (cacheName) {
+            window.caches
+              .open(cacheName)
+              .then(function (cache) {
+                return cache.keys();
+              })
+              .then(function (requests) {
+                requests.forEach(function (request) {
+                  console.log(cacheName);
+                  return caches.delete(cacheName);
+                });
+              });
+          });
+        });
     };
 </script>
 
 <body>
 
-<h1>Yes. You cleared your cache.  </h1>
+<h1>Yes. Cleared New Creations cache and local storage </h1>
 
 </body>
 </html>

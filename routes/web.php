@@ -14,6 +14,7 @@
 
 Route::get('/', 'SiteController@home')->name('home');
 Route::get('{iso}/ebook', 'SiteController@ebook')->name('ebook');
+Route::get('ebook', 'SiteController@english_ebook')->name('english_ebook');
 Route::get('test', 'SiteController@test')->name('test');
 Route::get('/clear', 'SiteController@clear')->name('clear');
 Route::get('/debug', 'SiteController@debug')->name('debug');
