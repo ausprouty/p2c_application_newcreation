@@ -1,0 +1,14 @@
+<?php
+
+return [
+    "Bible" => "بائبل",
+    "The Straight Path" => "مستقیمه لار",
+    "Soil Testing" => "ځمکه تجربه",
+    "The Straight Path of the New Creation" => "نوي تخلیق ته مستقیم لاره",
+    "The Prayer Life of a New Creation Muslim" => "د نوي جوړ شوي مسلمان لمونځ ژوند",
+    "The New Creation Confession" => "نوی تخلیقی اعتراف",
+    "The New Creation Pilgrimage" => "نوي تخلیق څخه لیدنه وکړئ",
+    "How to Start a House Masjid and a Messianic Madrasa for New Creation" => "دا د مسلمانانو په کور کې نوی جوړ شوی دی څنګه د جومات او عیسوي مدرسو تنظیم کول۔",
+    "Glossary" => "قاموس ",
+    "Four Spiritual Principles" => "Four Spiritual Principles"
+]

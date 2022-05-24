@@ -9,10 +9,9 @@ class GoPublic extends \Illuminate\Foundation\Application
  */
  public function publicPath()
  {
- //$public_folder = config('app.public_folder');
-$public_folder = 'htdocs';
-//TODO: change is back for production
- //return $this->basePath.DIRECTORY_SEPARATOR.'../../public_html/laravel_newcreation';
- return $this->basePath.DIRECTORY_SEPARATOR.'../../' . $public_folder .'/laravel_newcreation';
+ $public_folder = config('app.public_folder');
+
+ return $this->basePath.DIRECTORY_SEPARATOR.'../../public_html';
+
  }
 }

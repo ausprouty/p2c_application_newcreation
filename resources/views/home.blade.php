@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>New Creations</title>
-    <meta http-equiv=“Expires” content=”-1″>
     <meta charset="utf-8"/>
+    <title>New Creations</title>
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=5.0"
+        content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155675539-1"></script>
@@ -56,23 +55,27 @@
                 </a>
                 <div id="homeDropdown" class="dropdown-content">
                     <a href="#ar/index">(Arabic) عربى</a>
+                    <a href="#bn/index">বাংলা(Bengali)</a>
                     <a href="#en/index">English</a>
                     <a href="#fa/index">(Farsi) فارسی</a>
+                    <a href="#id/index">Bahasa(Indoneisan)</a>
+                    <a href="#ps/index">(Pashto)پښتو</a>
                     <a href="#ur/index">(Urdu) اردو</a>
                 </div>
             </div>
-           
+
             <div class = "nav-column-share">
                 <a onclick="share('@{{iso}}')" href="javascript:void(0);">
                     <img class="nav-share" src="{{ asset('files/images/NavFrontShare.png')}}">
                 </a>
             </div>
-            
+
         </div>
     </header>
-    <div class="content blue">
+    <div class="content">
         @{{{text}}}
         <div class="footer">
+        <p>NCBM (C) Copyright 2017, 2020 AFI Intl.</p>
         </div>
     </div>
 </script>
@@ -91,8 +94,11 @@
                     <img class="nav-share dropbtn" src="{{ asset('files/images/NavPrinciplesLanguages.png')}}">
                     <div id="pageTmpDropdown" class="dropdown-content">
                         <a href="#ar/principles">(Arabic) عربى</a>
+                        <a href="#bn/principles">বাংলা(Bengali)</a>
                         <a href="#en/principles">English</a>
                         <a href="#fa/principles">(Farsi) فارسی</a>
+                        <a href="#id/principles">Bahasa(Indoneisan)</a>
+                        <a href="#ps/principles">(Pashto)پښتو</a>
                         <a href="#ur/principles">(Urdu) اردو</a>
                     </div>
                 </a>
@@ -102,14 +108,15 @@
                     <img class="nav-share" src="{{ asset('files/images/NavPrinciplesShare.png')}}">
                 </a>
             </div>
-            
+
     </header>
     <div class="content">
         @{{{text}}}
         <div class="footer">
+        <p>NCBM (C) Copyright 2017, 2020 AFI Intl</p>
         </div>
     </div>
-    
+
 </script>
 
 <script id="book-list-tpl" type="text/template">
@@ -125,8 +132,11 @@
                     <img class="nav-share dropbtn" src="{{ asset('files/images/NavBibleLanguages.png')}}">
                     <div id="bookListTplDropdown" class="dropdown-content">
                         <a href="#ar/bible">(Arabic) عربى</a>
+                        <a href="#bn/bible">বাংলা(Bengali)</a>
                         <a href="#en/bible">English</a>
                         <a href="#fa/bible">(Farsi) فارسی</a>
+                        <a href="#id/index">Bahasa(Indoneisan)</a>
+                        <a href="#ps/bible">(Pashto)پښتو</a>
                         <a href="#ur/bible">(Urdu) اردو</a>
                     </div>
                 </a>
@@ -140,7 +150,7 @@
     </header>
     <div class="content" dir = "@{{dir}}">
         <div class = "download-banner">
-            <button class = "download-banner @{{download}}"  id= "download-bible" onclick="downloadBible('@{{iso}}' )"  > 
+            <button class = "download-banner @{{download}}"  id= "download-bible" onclick="downloadBible('@{{iso}}' )"  >
                  @{{download_bible}}
             </button>
         </div>
@@ -159,6 +169,7 @@
             <p><a href= "#" onclick="removeStoredBible('@{{iso}}');return false;">@{{remove_bible}}</a></p>
         </div>
         <div class="footer">
+        <p>NCBM (C) Copyright 2017, 2020 AFI Intl.</p>
         </div>
     </div>
 </script>
@@ -176,8 +187,11 @@
                     <img class="nav-share dropbtn" src="{{ asset('files/images/NavBibleLanguages.png')}}">
                     <div id="çhapterListTplDropdown" class="dropdown-content">
                         <a href="#ar/book/@{{bid}}">(Arabic) عربى</a>
+                        <a href="#bn/book/@{{bid}}">বাংলা(Bengali)</a>
                         <a href="#en/book/@{{bid}}">English</a>
                         <a href="#fa/book/@{{bid}}">(Farsi) فارسی</a>
+                        <a href="#id/book/@{{bid}}">Bahasa (Indonesian)</a>
+                        <a href="#ps/book/@{{bid}}">(Pashto)پښتو</a>
                         <a href="#ur/book/@{{bid}}">(Urdu) اردو</a>
                     </div>
                 </a>
@@ -189,12 +203,12 @@
             </div>
         </div>
     </header>
-    
+
     <div class="content bible-chapter-list">
         <div id = "download_button" class = "download-banner green  @{{download}}">
-            <button class = "download-banner" 
-                id= "download-book" 
-                onclick="downloadBook('@{{iso}}', '@{{file_name}}','@{{chapters}}')"> 
+            <button class = "download-banner"
+                id= "download-book"
+                onclick="downloadBook('@{{iso}}', '@{{file_name}}','@{{chapters}}')">
                  @{{download_book}}
             </button>
         </div>
@@ -204,6 +218,7 @@
             <p><a href= "#" onclick="removeStoredBook('@{{file_name}}');return false;">@{{remove_item}}</p>
         </div>
         <div class="footer">
+        <p>NCBM (C) Copyright 2017, 2020 AFI Intl.</p>
         </div>
     </div>
 </script>
@@ -221,8 +236,11 @@
                     <img class="nav-share dropbtn" src="{{ asset('files/images/NavBibleLanguages.png')}}">
                     <div id="çhapterTplDropdown" class="dropdown-content">
                         <a href="#ar/chapter/ar--@{{page}}">(Arabic) عربى</a>
+                        <a href="#bn/chapter/bn--@{{page}}">বাংলা(Bengali)</a>
                         <a href="#en/chapter/en--@{{page}}">English</a>
+                        <a href="#id/chapter/id--@{{page}}">Bahasa(Indonesian)</a>
                         <a href="#fa/chapter/fa--@{{page}}">(Farsi) فارسی</a>
+                        <a href="#ps/chapter/ps--@{{page}}">(Pashto)پښتو</a>
                         <a href="#ur/chapter/ur--@{{page}}">(Urdu) اردو</a>
                     </div>
                 </a>
@@ -241,6 +259,7 @@
         <br>
         <hr>
         <div class="footer">
+            <p>NCBM (C) Copyright 2017, 2020 AFI Intl.</p>
         </div>
     </div>
 </script>
