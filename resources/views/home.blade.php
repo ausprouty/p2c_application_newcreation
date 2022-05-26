@@ -75,7 +75,7 @@
     <div class="content">
         @{{{text}}}
         <div class="footer">
-        <p>NCBM (C) Copyright 2017, 2020 AFI Intl.</p>
+        <p>NCBM (C) Copyright 2017,2022 AFI Intl.</p>
         </div>
     </div>
 </script>
@@ -113,7 +113,7 @@
     <div class="content">
         @{{{text}}}
         <div class="footer">
-        <p>NCBM (C) Copyright 2017, 2020 AFI Intl</p>
+        <p>NCBM (C) Copyright 2017,2022 AFI Intl</p>
         </div>
     </div>
 
@@ -169,7 +169,7 @@
             <p><a href= "#" onclick="removeStoredBible('@{{iso}}');return false;">@{{remove_bible}}</a></p>
         </div>
         <div class="footer">
-        <p>NCBM (C) Copyright 2017, 2020 AFI Intl.</p>
+        <p>NCBM (C) Copyright 2017,2022 AFI Intl.</p>
         </div>
     </div>
 </script>
@@ -218,7 +218,7 @@
             <p><a href= "#" onclick="removeStoredBook('@{{file_name}}');return false;">@{{remove_item}}</p>
         </div>
         <div class="footer">
-        <p>NCBM (C) Copyright 2017, 2020 AFI Intl.</p>
+        <p>NCBM (C) Copyright 2017,2022 AFI Intl.</p>
         </div>
     </div>
 </script>
@@ -259,7 +259,7 @@
         <br>
         <hr>
         <div class="footer">
-            <p>NCBM (C) Copyright 2017, 2020 AFI Intl.</p>
+            <p>NCBM (C) Copyright 2017,2022 AFI Intl.</p>
         </div>
     </div>
 </script>
