@@ -1,0 +1,14 @@
+<?php
+
+return [
+    "Bible" => "Alkitab",
+    "The Straight Path" => "Jalan Lurus",
+    "Soil Testing" => "Pengujian Tanah",
+    "The Straight Path of the New Creation" => "Jalan Lurus Ciptaan Baru",
+    "The Prayer Life of a New Creation Muslim" => "Kehidupan Doa Seorang Muslim Ciptaan Baru",
+    "The New Creation Confession" => "Pengakuan Penciptaan Baru",
+    "The New Creation Pilgrimage" => "Ziarah Ciptaan Baru",
+    "How to Start a House Masjid and a Messianic Madrasa for New Creation" => "Bagaimana Memulai Masjid Rumah dan Mesianik Madrasah Cipta Baru",
+    "Glossary" => "Glosarium",
+    "Four Spiritual Principles" => "Four Spiritual Principles"
+]
